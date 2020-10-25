@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>P8S</title>
+    <style type="text/css">
+        [wy-src]{
+            width: 200px;
+            height: 200px;
+            background: skyblue;
+        }
+        [wy-src="dd"]{
+           border: 2px solid peru;
+        }
+
+        li:nth-child(1){
+            background: peru;
+        }
+        li:nth-child(2){
+            background: skyblue;
+        }
+        li:last-child{
+            background: yellow;
+        }
+        .parent>div{
+            width: 200px;
+            height: 200px;
+            background: antiquewhite;
+        }
+        /*.num1+div{*/
+        /*    background: darkcyan;*/
+        /*}*/
+        .num1~div{
+            background: darkgreen;
+        }
+    </style>
+</head>
+<body>
+<div wy-src="dd">
+    helloworld
+</div>
+
+<ol>
+    <li>helloworld1</li>
+    <li>helloworld2</li>
+    <li>helloworld3</li>
+    <li>helloworld4</li>
+    <li>helloworld5</li>
+</ol>
+
+<div class="parent">
+    <div class="child">
+        <div class="grandson">
+            helloworld
+        </div>
+    </div>
+</div>
+
+<div>hello1</div>
+<div>hello2</div>
+<div class="num1">hello3</div>
+<div>hello4</div>
+<div>hello5</div>
+
+</body>
+</html>
